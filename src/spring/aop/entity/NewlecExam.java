@@ -1,4 +1,4 @@
-package spring.di.entity;
+package spring.aop.entity;
 
 public class NewlecExam implements Exam {
 
@@ -20,25 +20,22 @@ public class NewlecExam implements Exam {
 		this.eng = eng;
 		this.com = com;
 	}
-
+	
 	@Override
 	public int total() {
-		
-		
+	
 		int result = kor + math + eng + com;
 
-		
+		if(kor > 100) throw new IllegalArgumentException("유효하지 않은 점수 입니다."); 
 		
 		return result;
 	}
 
 	@Override
 	public float avg() {
-		
-		
+
 		float result = total() / 4.0f;
-		
-		
+
 		return result;
 	}
 

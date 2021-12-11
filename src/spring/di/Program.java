@@ -26,7 +26,7 @@ public class Program {
 //		ApplicationContext context = new ClassPathXmlApplicationContext("spring/di/setting.xml");
 		ApplicationContext context = new AnnotationConfigApplicationContext(NewlecDIConfig.class);
 //		Exam exam = context.getBean(Exam.class);
-//		ExamConsole console = (ExamConsole) context.getBean("console");
+//		ExamConsole console = (ExamCons ole) context.getBean("console");
 //		System.out.println(exam.toString());
 //		List<Exam> exams = (List<Exam>) context.getBean("exams");
 		
